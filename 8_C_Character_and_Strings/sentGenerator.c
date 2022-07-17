@@ -35,7 +35,7 @@ int main(){
         sprintf(s, "%s ",strcat(s,verb[rand3]));
         sprintf(s, "%s ",strcat(s,preposition[rand4]));
         sprintf(s, "%s ",strcat(s,article[rand5]));
-        printf("%s.\n",strcat(s,noun[rand6]));
+        printf("%s.",strcat(s,noun[rand6]));
 
     }
 }
