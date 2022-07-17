@@ -19,6 +19,8 @@ int main(){
 
     for (i = 0; i < 20; i++){
         char s[100] = "";
+        char s2[8] = "";
+        
         rand1 = rand() % SIZE;
         rand2 = rand() % SIZE;
         rand3 = rand() % SIZE;
@@ -26,7 +28,9 @@ int main(){
         rand5 = rand() % SIZE;
         rand6 = rand() % SIZE;
 
-        sprintf(s, "%s ",strcat(s,strcat(toupper(article[rand1][0]),&article[rand1][1])));
+        int n= toupper(article[rand1][0]);
+        sprintf(s2,"%c%s",n,&article[rand1][1]);
+        sprintf(s, "%s ",strcat(s,s2));
         sprintf(s, "%s ",strcat(s,noun[rand2]));
         sprintf(s, "%s ",strcat(s,verb[rand3]));
         sprintf(s, "%s ",strcat(s,preposition[rand4]));
